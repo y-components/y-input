@@ -3,7 +3,9 @@ var b = require('b_').with('y-input');
 
 var Style = require('./index.css!');
 
-var YCheckbox = {
+var YInput = {
+	displayName: 'y-input',
+
 	__onFocus: function() {
 		this.setState({focused: true});
 	},
@@ -75,5 +77,5 @@ var YCheckbox = {
 	}
 };
 
-module.exports = React.createClass(YCheckbox);
-module.exports.Class = YCheckbox;
+module.exports = React.createClass(YInput);
+module.exports.Class = YInput;

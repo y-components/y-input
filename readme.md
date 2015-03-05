@@ -5,7 +5,8 @@
 ## Development
 
 ```bash
-npm install
-npm run start
-open http://localhost:8080
+npm install jspm http-server -g
+
+jspm install
+npm run serve
 ```
