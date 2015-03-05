@@ -1,4 +1,4 @@
-# y-tabs
+# y-input
 
 :warning: __Under development__
 
