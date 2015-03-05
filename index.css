@@ -1,0 +1,165 @@
+.y-input_theme_normal {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  background: rgba(0,0,0,0.2);
+/* Decorative element (inner background) */
+}
+.y-input_theme_normal:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  background: #fff;
+}
+.y-input_theme_normal .y-input__box {
+  position: relative;
+  display: block;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.y-input_theme_normal .y-input__control {
+  font: inherit;
+  line-height: inherit;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+/* лишние отступы у текста */
+/* нативный крестик */
+}
+.y-input_theme_normal .y-input__control::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.y-input_theme_normal .y-input__control::-webkit-search-cancel-button {
+  display: none;
+}
+.y-input_theme_normal .y-input__control::-webkit-input-placeholder {
+  color: #999;
+  text-indent: 0;
+}
+.y-input_theme_normal .y-input__control::-moz-placeholder {
+  opacity: 1;
+  color: #999;
+}
+.y-input_theme_normal .y-input__control::-ms-clear {
+  display: none;
+}
+.y-input_theme_normal.y-input_has-clear .y-input__control {
+  text-overflow: ellipsis;
+}
+.y-input_theme_normal .y-input__clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: text;
+  transition: opacity 0.1s ease-out;
+  opacity: 0;
+  background: 50% 50% no-repeat;
+}
+.y-input_theme_normal .y-input__clear_visible {
+  opacity: 0.3;
+}
+.y-input_theme_normal .y-input__clear_visible:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.y-input_theme_normal.y-input_focused {
+  z-index: 1;
+  background: rgba(178,142,0,0.6);
+  box-shadow: 0 0 0 1px #fc0, inset 0 0 0 1px #fc0;
+}
+.y-input_theme_normal.y-input_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.y-input_theme_normal.y-input_disabled:before,
+.y-input_theme_normal.y-input_disabled .y-input__clear {
+  display: none;
+}
+.y-input_theme_normal.y-input_disabled .y-input__box,
+.y-input_theme_normal.y-input_disabled .y-input__control {
+  color: rgba(0,0,0,0.4);
+  cursor: default;
+}
+.y-input_theme_normal.y-input_size_s .y-input__clear,
+.y-input_theme_normal.y-input_size_m .y-input__clear {
+  width: 24px;
+  height: 24px;
+  background-image: url("clear_size_s.png");
+  background-position: 7px 50%;
+}
+.y-input_theme_normal.y-input_size_s {
+  font-size: 13px;
+  line-height: 16px;
+}
+.y-input_theme_normal.y-input_size_s .y-input__control {
+  height: 24px;
+  padding-left: 6px;
+}
+.y-input_theme_normal.y-input_size_s.y-input_has-clear .y-input__box {
+  padding-right: 24px;
+}
+.y-input_theme_normal.y-input_size_m {
+  font-size: 13px;
+  line-height: 16px;
+}
+.y-input_theme_normal.y-input_size_m .y-input__control {
+  height: 28px;
+  padding-left: 8px;
+}
+.y-input_theme_normal.y-input_size_m.y-input_has-clear .y-input__box {
+  padding-right: 28px;
+}
+.y-input_theme_normal.y-input_size_m .y-input__clear {
+  width: 28px;
+  height: 28px;
+  background-position: 9px 50%;
+}
+.y-input_theme_normal.y-input_size_l .y-input__clear,
+.y-input_theme_normal.y-input_size_xl .y-input__clear {
+  width: 32px;
+  height: 32px;
+  background-image: url("clear_size_l.png");
+  background-position: 9px 50%;
+}
+.y-input_theme_normal.y-input_size_l {
+  font-size: 15px;
+  line-height: 18px;
+}
+.y-input_theme_normal.y-input_size_l .y-input__control {
+  height: 32px;
+  padding-left: 10px;
+}
+.y-input_theme_normal.y-input_size_l.y-input_has-clear .y-input__box {
+  padding-right: 32px;
+}
+.y-input_theme_normal.y-input_size_xl {
+  font-size: 18px;
+  line-height: 22px;
+}
+.y-input_theme_normal.y-input_size_xl .y-input__control {
+  height: 38px;
+  padding-left: 12px;
+}
+.y-input_theme_normal.y-input_size_xl.y-input_has-clear .y-input__box {
+  padding-right: 38px;
+}
+.y-input_theme_normal.y-input_size_xl .y-input__clear {
+  width: 38px;
+  height: 38px;
+  background-position: 12px 50%;
+}
+.y-input_theme_normal.y-input_width_available {
+  width: 100%;
+}
+.y-input_theme_normal.y-input_type_password .y-input__control {
+  text-overflow: clip;
+}
