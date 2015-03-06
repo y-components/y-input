@@ -28,6 +28,7 @@
   "homepage": "https://github.com/y-components/y-input",
   "jspm": {
     "main": "index.jsx!",
+    "registry": "jspm",
     "directories": {
       "lib": ".",
       "packages": "jspm_packages"
