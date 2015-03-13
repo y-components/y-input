@@ -1,6 +1,6 @@
 {
   "name": "y-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "y-component input",
   "scripts": {
     "serve": "http-server -p 8080 -o -c-1"
