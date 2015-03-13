@@ -3,7 +3,7 @@
   position: relative;
   display: inline-block;
   background: rgba(0,0,0,0.2);
-/* Decorative element (inner background) */
+  width: 100%;
 }
 .y-input_theme_normal:before {
   position: absolute;
